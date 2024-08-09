@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/Logo 2.webp">
+    <title>SuperGroceries - Order</title>
+    <link rel="stylesheet" href="Css.css">
+</head>
+<body>
+    <head>
+        <section>
+            <nav>
+                <div class="nav">
+                    <img src="Images/Logo 1.webp" class="logo" alt="logo">
+                    <ul>
+                      <li><a href="Home.html">Home</a></li>
+                      <li><a href="About us.html">About Us</a></li>
+                      <li><a href="Dairy.html">Dairy</a></li>
+                      <li><a href="Vegetables.html">Vegetables</a></li>
+                      <li><a href="Fruits.html">Fruits</a></li>
+                      <li><a href="Meat&Seafood.html">Meat & Seafood</a></li>
+                      <li><a href="Cooking Items.html">Cooking Items</a></li>
+                      <li><a href="Loyalty registration.html">Loyalty Registration</a></li>
+                      <li><a href="Order.html" class="tab">Order</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                    <form>
+                      <input type="search" name="search" placeholder="Search">
+                    </form>
+                </div>
+            </nav>
+        </section>
+    </head>
+    <center>
+        <h1>Shopping Cart</h1>
+        <br><br>
+        <table class="ordertable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+            </tbody>
+        </table>
+    </center>
+    <br><br>
+    <main>
+      <section class="order-container">
+        <div class="order"> 
+          <form class="order-form">
+             <br><br>
+                <hr>
+                <h3>Billing Details:</h3>
+                Name: <input type="text" name="name" required class="name input-field" placeholder="Enter Your Name"><br><br>      
+                Phone number: <input type="tel" name="phoneno" minlength="10" maxlength="11" placeholder="Enter Phone Number" required class="phoneno2 input-field"><br><br>
+                Email: <input type="email" name="email" required class="email2 input-field" placeholder="Enter Your Email"><br><br>      
+                Address: <input type="text" name="address" required class="address input-field" placeholder="Enter Your Address"><br><br>      
+                City: <input type="text" name="city" required class="city input-field" placeholder="Enter Your City"><br><br>      
+                Zip Code: <input type="text" name="zip" required class="zipcode input-field" placeholder="Enter Your City Zipcode"><br>        
+                <br><hr>
+                <h3>Payment Details:</h3>
+                Payment Method: <select  name="payment-method" class="payment input-field">
+                <option value="credit-card">Visa</option>
+                <option value="paypal">Master</option></select><br><br>
+                Card Number: <input type="text" name="card-number" required class="cardno input-field" placeholder="Enter Your Card Number"><br><br>      
+                Expiration Date: <input type="month" name="expiration-date" minlength="16" maxlength="16" required class="exdate input-field" placeholder="Enter Your Card Expiration Date"><br><br>      
+                CVV: <input type="text" name="cvv" required class="cvv input-field" placeholder="Enter Your Card CVV">
+                <br><br>
+              <button type="submit" class="btn">Place Order</button>
+        </form>
+      </div>
+    </section>
+  </main><br>  
+  <script src="script/cart.js"></script> 
+</body>
+<br>
+<footer>
+  <div class="footer-content">
+    <div class="footer-section left">
+        <h3>Useful Links</h3>
+        <ul>           
+          <li><a href="About us.html" target="_blank">About us</a></li>
+          <li><a href="Loyalty registration.html" target="_blank">Loyalty registration</a></li> 
+          <li><a href="https://www.keellssuper.com/contactus" target="_blank">Contact us</a></li>
+          <li><a href="https://www.keellssuper.com/TermsAndConditions" target="_blank">Terms & Conditions</a></li>
+        </ul>
+    </div>
+    <div class="footer-section right">
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="https://web.facebook.com/Keells.SL" target="_blank">
+            <img src="Images/Facebook.webp" alt="Facebook"></a>
+          <a href="https://twitter.com/keells_sl" target="_blank">
+            <img src="Images/Twitter.webp" alt="Twitter"></a>
+          <a href="https://youtube.com/@Keells_SL?si=ZTFHsBFPOChzhZt5" target="_blank">
+            <img src="Images/YouTube.webp" alt="YouTube"></a>
+        </div>
+    </div>
+  </div>
+</footer>
+</html>

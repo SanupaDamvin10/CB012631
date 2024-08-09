@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/Logo 2.webp">
+    <title>SuperGroceries - Cart</title>
+    <link rel="stylesheet" href="Css.css">
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <nav>
+                <div class="nav">
+                    <img src="Images/Logo 1.webp" class="logo" alt="logo">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About us.html">About Us</a></li>
+                        <li><a href="Dairy.html">Dairy</a></li>
+                        <li><a href="Vegetables.html">Vegetables</a></li>
+                        <li><a href="Fruits.html">Fruits</a></li>
+                        <li><a href="Meat&Seafood.html">Meat & Seafood</a></li>
+                        <li><a href="Cooking Items.html">Cooking Items</a></li>
+                        <li><a href="Loyalty registration.html">Loyalty Registration</a></li>
+                        <li><a href="Order.html">Order</a></li>
+                        <li><a href="cart.html" class="tab">Cart</a></li>
+                    </ul>
+                    <form>
+                        <input type="search" name="search" placeholder="Search">
+                    </form>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <center>
+            <h1>Shopping Cart</h1>
+            <br><br>
+            <table class="ordertable">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>        
+            <br>
+            <button id="addToFavoritesButton">Add to Favorites</button>
+            <button id="applyFavoritesButton">Apply Favorites</button>
+            <button id="clearCartButton">Clear Cart</button>
+            <a href="Order.html" class="orderBtn">Order Now</a>            
+        </center>
+
+    </main>
+    <br><br>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section left">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="About us.html" target="_blank">About us</a></li>
+                    <li><a href="Loyalty registration.html" target="_blank">Loyalty registration</a></li>
+                    <li><a href="https://www.keellssuper.com/contactus" target="_blank">Contact us</a></li>
+                    <li><a href="https://www.keellssuper.com/TermsAndConditions" target="_blank">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section right">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="https://web.facebook.com/Keells.SL" target="_blank">
+                        <img src="Images/Facebook.webp" alt="Facebook"></a>
+                    <a href="https://twitter.com/keells_sl" target="_blank">
+                        <img src="Images/Twitter.webp" alt="Twitter"></a>
+                    <a href="https://youtube.com/@Keells_SL?si=ZTFHsBFPOChzhZt5" target="_blank">
+                        <img src="Images/YouTube.webp" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <script src="script/cart.js"></script>
+</body>
+
+</html>
